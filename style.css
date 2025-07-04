@@ -1,10 +1,11 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     color: #333;
+    min-height: 100vh;
 }
 
 header {
@@ -27,6 +28,13 @@ nav ul li {
 nav a {
     color: #fff;
     text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255,255,255,0.1);
 }
 
 main {
@@ -39,11 +47,37 @@ section {
     margin-bottom: 20px;
     background: #fff;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
 h1, h2, h3 {
     color: #333;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #2c3e50;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    color: #34495e;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.3em;
+    color: #2980b9;
+    margin-bottom: 0.5em;
 }
 
 footer {
@@ -86,6 +120,143 @@ th {
     align-items: center;
 }
 
+#home .title {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 5px 0;
+}
+
+#home .company {
+    font-size: 1.1em;
+    color: #3498db;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
 #home img {
     border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+#home img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #home {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #home img {
+        margin-top: 20px;
+        width: 150px;
+        height: 150px;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+    
+    main {
+        padding: 10px;
+    }
+    
+    section {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #home img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    h2 {
+        font-size: 1.4em;
+    }
+    
+    table {
+        font-size: 0.9em;
+    }
+    
+    th, td {
+        padding: 8px;
+    }
+}
+
+/* Job styling */
+.job {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: transparent;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.job header {
+    margin-bottom: 15px;
+}
+
+.job h3 {
+    margin: 0 0 5px 0;
+    color: #0b80f6;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.job header p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.job ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.job li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* Skills styling */
+.skill-category {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border-left: 3px solid #e74c3c;
+}
+
+.skill-category h3 {
+    margin-top: 0;
+    color: #c0392b;
+}
+
+.skill-category p {
+    margin: 10px 0 0 0;
+    font-weight: 500;
+}
+
+/* Contact links */
+#contact a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+    color: #2980b9;
 }

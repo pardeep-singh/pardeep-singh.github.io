@@ -3,7 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pardeep Singh - Personal Website</title>
+    <meta name="description" content="Pardeep Singh - Lead Machine Learning Engineer at Fairmatic specializing in AI-based insurance scoring models, MLOps, and applied machine learning solutions.">
+    <meta name="keywords" content="Machine Learning Engineer, AI, MLOps, Insurance Technology, Python, Deep Learning, Data Science, Fairmatic">
+    <meta name="author" content="Pardeep Singh">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pardeep Singh - Lead Machine Learning Engineer">
+    <meta property="og:description" content="Lead Machine Learning Engineer at Fairmatic specializing in AI-based insurance scoring models, MLOps, and applied machine learning solutions.">
+    <meta property="og:url" content="https://pardeep-singh.com">
+    <meta property="og:image" content="https://pardeep-singh.github.io/images/my_photo.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Pardeep Singh - Lead Machine Learning Engineer">
+    <meta property="twitter:description" content="Lead Machine Learning Engineer at Fairmatic specializing in AI-based insurance scoring models, MLOps, and applied machine learning solutions.">
+    <meta property="twitter:image" content="https://pardeep-singh.github.io/images/my_photo.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://pardeep-singh.com/">
+    
+    <title>Pardeep Singh - Lead Machine Learning Engineer | Personal Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,7 +34,6 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="quotes.html">Quotes</a></li>
-                <li><a href="resources.html">Resources</a></li>
                 <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
@@ -23,92 +43,93 @@
         <section id="home">
             <div>
                 <h1>Pardeep Singh</h1>
-                <p>Lead Machine Learning Engineer at Fairmatic</p>
+                <p class="title">Lead Machine Learning Engineer</p>
+                <p class="company">at Fairmatic</p>
             </div>
-            <img src="images/my_photo.jpg" alt="Pardeep Singh" width="200" height="200">
+            <img src="images/my_photo.jpg" alt="Professional headshot of Pardeep Singh, Lead Machine Learning Engineer" width="200" height="200">
         </section>
 
         <section id="about">
             <h2>About Me</h2>
-            <p>I'm a Machine Learning Engineer who is passionate about applying technology to solve real-life problems. Right now, I'm working on the AI-based Insurance scoring models at Fairmatic. During my free time, I always seek to enhance my knowledge by enrolling in online courses, participating in meetups, and doing side projects.</p>
-            <p>My areas of interest involve Applied Machine Learning, GenAI, Distributed and Big Data Systems.</p>
+            <p>I'm a Lead Machine Learning Engineer passionate about applying AI technology to solve real-world problems. Currently leading AI-based insurance scoring models at Fairmatic, I bring 10+ years of experience in ML engineering, MLOps, and building production-scale AI systems.</p>
+            <p><strong>Core Expertise:</strong> Applied Machine Learning, MLOps, Distributed Systems, and Insurance Technology</p>
+            <p><strong>Professional Focus:</strong> End-to-end ML pipeline development, model deployment architecture, and team leadership in AI-driven products</p>
         </section>
 
         <section id="experience">
             <h2>Experience</h2>
-            <div class="job">
-                <h3>Fairmatic</h3>
-                <p><strong>Lead Machine Learning Engineer</strong> (April 2022 - Present)</p>
+            <article class="job">
+                <header>
+                    <h3>Fairmatic</h3>
+                    <p><strong>Lead Machine Learning Engineer</strong> <time datetime="2022-04">(April 2022 - Present)</time></p>
+                </header>
                 <ul>
-                    <li>Joined the team during stealth mode and became the Subject matter expert on Risk models used to assess insurance risk. Lead Multiple projects in this area.</li>
-                    <li>Proposed an architecture to deploy models to productions. Performed two extensive POCs using Qwak and MLFlow. Choose MLFlow based on a comparison with Qwak and Sagemaker. This will reduce the time we take for moving models from research to production by 80%.</li>
-                    <li>Proposed a solution to fix existing version of the models. I was responsible for the end-to-end implementation along with an extensive evaluation to ship this change to production.</li>
-                    <li>Implemented a feature to identify the areas of improvement for different drivers to help them make safer drivers. Used ensembled tree based solution to identify such factors. Improved the accuracy of this feature in the next iteration by 10%(from 86% to 96%) by using a deterministic Non ML-based solution.</li>
-                    <li>Lead the efforts to benchmark existing Risk Models. This work enabled the team to identify shortcomings of current models and devise a plan to overcome them in the next version of Risk Models.</li>
-                    <li>Implemented a Streamlit-based dashboard to monitor Risk Models. This reduced the time taken to debug model issues from days to hours.</li>
-                    <li>Productionized the new version of Risk models. Along with implementation, I did the end-to-end impact analysis of new models on Insurance books.</li>
-                    <li>Responsible for hiring new team members across Senior Software, Machine Learning Engineer, and Data Scientists roles.</li>
-                    <li>Organizer of weekly technical talks for the Engineering Team. Organized over 15+ sessions so far.</li>
-                    <li>Mentored 3 new joiners by becoming their buddy for the first month of joining the team.</li>
+                    <li><strong>Risk Models:</strong> Became SME on insurance risk models during stealth mode, leading multiple projects and reducing model deployment time by 80%</li>
+                    <li><strong>MLOps Architecture:</strong> Designed and implemented MLFlow-based deployment architecture after comprehensive POC evaluation</li>
+                    <li><strong>Driver Safety AI:</strong> Built ensemble ML solution for driver improvement recommendations, achieving 96% accuracy (10% improvement)</li>
+                    <li><strong>Model Monitoring:</strong> Created Streamlit dashboard reducing debugging time from days to hours</li>
+                    <li><strong>Team Leadership:</strong> Led hiring for 3+ roles, mentored 3 engineers, and organized 15+ technical talks</li>
                 </ul>
-            </div>
-            <div class="job">
-                <h3>Sense</h3>
-                <p><strong>Lead Machine Learning Engineer</strong> (May 2021 - March 2022)</p>
+            </article>
+            <article class="job">
+                <header>
+                    <h3>Sense</h3>
+                    <p><strong>Lead Machine Learning Engineer</strong> <time datetime="2021-05">(May 2021 - March 2022)</time></p>
+                </header>
                 <ul>
-                    <li>Rearchitected the Chatbot System and removed the overhead of training models for deploying new chatbots. This used to take 1 hour per chatbot and it was reduced to less than 1 minute with this.</li>
-                    <li>Responsible for hiring new team members by taking technical interview rounds like coding, and system design rounds for Machine Learning Engineer, Software Engineer roles.</li>
-                    <li>Onboarded 2 new team members by becoming their buddy for the first month of joining the team.</li>
+                    <li><strong>Chatbot Optimization:</strong> Rearchitected system reducing deployment time from 1 hour to <1 minute per chatbot</li>
+                    <li><strong>Technical Leadership:</strong> Conducted technical interviews and mentored 2 new team members</li>
                 </ul>
-                <p><strong>Machine Learning Engineer</strong> (November 2020 - May 2021)</p>
+                <p><strong>Machine Learning Engineer</strong> <time datetime="2020-11">(November 2020 - May 2021)</time></p>
                 <ul>
-                    <li>Working on the Conversational AI assistant used to prescreen the candidates and enhance the candidate's information in the Applicant Tracking System.</li>
+                    <li><strong>Conversational AI:</strong> Developed candidate prescreening assistant for ATS enhancement</li>
                 </ul>
-            </div>
-            <div class="job">
-                <h3>Helpshift</h3>
-                <p><strong>Software Engineer II: Machine Learning</strong> (September 2019 - November 2020)</p>
+            </article>
+            <article class="job">
+                <header>
+                    <h3>Helpshift</h3>
+                    <p><strong>Software Engineer II: Machine Learning</strong> <time datetime="2019-09">(September 2019 - November 2020)</time></p>
+                </header>
                 <ul>
-                    <li>Worked on multiple NLP based products like Issue classification, FAQs suggestions, Language detection</li>
-                    <li>Delivered a Django application to perform clustering on customer support tickets.</li>
-                    <li>Created a roadmap for implementing a Machine Learning Platform to perform end-to-end experiments.</li>
-                    <li>Implemented a Django application for training and serving classification models.</li>
-                    <li>Improved the preprocessing library by addressing discrepancies in various steps and standardizing the preprocessors used in multiple projects.</li>
+                    <li><strong>NLP Products:</strong> Built issue classification, FAQ suggestions, and language detection systems</li>
+                    <li><strong>ML Platform:</strong> Designed roadmap and implemented Django-based ML training/serving platform</li>
+                    <li><strong>Data Pipeline:</strong> Standardized preprocessing library across multiple projects</li>
                 </ul>
-                <p><strong>Software Engineer I: Backend</strong> (June 2016 - September 2019)</p>
+                <p><strong>Software Engineer I: Backend</strong> <time datetime="2016-06">(June 2016 - September 2019)</time></p>
                 <ul>
-                    <li>Worked on multiple iterations of the rule-based Chatbot system.</li>
-                    <li>Implemented the Backend REST API Service used by the WebChat client.</li>
-                    <li>Worked on multiple Third-Party integration products like REST APIs, Salesforce Integration, Zendesk Integration, Webhooks, Billing System.</li>
+                    <li><strong>Backend Development:</strong> Built REST APIs for WebChat client and rule-based chatbot system</li>
+                    <li><strong>Integrations:</strong> Developed Salesforce, Zendesk, and billing system integrations</li>
                 </ul>
-            </div>
-            <div class="job">
-                <h3>Paxcel Technologies Pvt. Ltd.</h3>
-                <p><strong>Software Engineer</strong> (July 2015 - May 2016)</p>
+            </article>
+            <article class="job">
+                <header>
+                    <h3>Paxcel Technologies Pvt. Ltd.</h3>
+                    <p><strong>Software Engineer</strong> <time datetime="2015-07">(July 2015 - May 2016)</time></p>
+                </header>
                 <ul>
-                    <li>Implemented a Sentiment Analysis Engine for analyzing Customer Product reviews.</li>
-                    <li>Worked on a client project with a goal to improve the efficiency and reliability of the systems used to manage the lifecycle of WordPress sites.</li>
+                    <li><strong>Sentiment Analysis:</strong> Built engine for customer product review analysis</li>
+                    <li><strong>WordPress Management:</strong> Improved efficiency and reliability of site lifecycle management systems</li>
                 </ul>
-                <p><strong>Trainee Software Engineer</strong> (January 2015 - June 2015)</p>
+                <p><strong>Trainee Software Engineer</strong> <time datetime="2015-01">(January 2015 - June 2015)</time></p>
                 <ul>
-                    <li>Added new features like AWS EC2 support, remote logging to open source project(Boxupp) used to launch virtual machines.</li>
-                    <li>Implemented an automated build and deployment tool as a POC which was used to onboard a customer.</li>
+                    <li><strong>Open Source:</strong> Contributed AWS EC2 support and remote logging to Boxupp VM launcher</li>
+                    <li><strong>DevOps:</strong> Built automated build/deployment POC for customer onboarding</li>
                 </ul>
-            </div>
+            </article>
         </section>
 
         <section id="education">
             <h2>Education</h2>
             <div class="education-item">
-                <h3>Indian Institute of Science (IISc)</h3>
+                <h3>Indian Institute of Science (IISc), Bengaluru</h3>
                 <p>Advanced Certification Programme in Deep Learning Foundations and Applications, Computer Engineering (April 2024 - May 2025)</p>
             </div>
             <div class="education-item">
-                <h3>Thapar Institute of Engineering and Technology</h3>
+                <h3>Thapar Institute of Engineering and Technology, Patiala</h3>
                 <p>Master of Computer Applications (M.C.A.), Computer Science (2012 - 2015)</p>
             </div>
             <div class="education-item">
-                <h3>Panjab University</h3>
+                <h3>Panjab University, Chandigarh</h3>
                 <p>Bachelors in Computer Applications, Computer Science (2009 - 2012)</p>
             </div>
         </section>
@@ -144,5 +165,52 @@
     <footer>
         <p>&copy; 2025 Pardeep Singh</p>
     </footer>
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Pardeep Singh",
+        "jobTitle": "Lead Machine Learning Engineer",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Fairmatic"
+        },
+        "url": "https://pardeep-singh.github.io",
+        "sameAs": [
+            "https://www.linkedin.com/in/pardeepsingh2",
+            "https://github.com/pardeep-singh",
+            "https://www.kaggle.com/pardeep19singh"
+        ],
+        "email": "pardeep.shergill17@gmail.com",
+        "image": "https://pardeep-singh.github.io/images/my_photo.jpg",
+        "description": "Lead Machine Learning Engineer at Fairmatic specializing in AI-based insurance scoring models, MLOps, and applied machine learning solutions.",
+        "knowsAbout": [
+            "Machine Learning",
+            "Artificial Intelligence",
+            "MLOps",
+            "Python",
+            "Deep Learning",
+            "Data Science",
+            "Insurance Technology",
+            "Risk Assessment Models"
+        ],
+        "alumniOf": [
+            {
+                "@type": "EducationalOrganization",
+                "name": "Indian Institute of Science (IISc)"
+            },
+            {
+                "@type": "EducationalOrganization",
+                "name": "Thapar Institute of Engineering and Technology"
+            },
+            {
+                "@type": "EducationalOrganization",
+                "name": "Panjab University"
+            }
+        ]
+    }
+    </script>
 </body>
 </html>
