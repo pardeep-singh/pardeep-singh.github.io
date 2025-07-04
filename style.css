@@ -89,3 +89,53 @@ th {
 #home img {
     border-radius: 50%;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #home {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #home img {
+        margin-top: 20px;
+        width: 150px;
+        height: 150px;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+    
+    main {
+        padding: 10px;
+    }
+    
+    section {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #home img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    h2 {
+        font-size: 1.4em;
+    }
+    
+    table {
+        font-size: 0.9em;
+    }
+    
+    th, td {
+        padding: 8px;
+    }
+}
