@@ -210,6 +210,12 @@ th {
 .job h3 {
     margin: 0 0 5px 0;
     color: #2c3e50;
+    font-size: 1.4em;
+}
+
+.job header p {
+    margin: 5px 0;
+    font-size: 1.1em;
 }
 
 .job ul {
