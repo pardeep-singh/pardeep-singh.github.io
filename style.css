@@ -120,6 +120,20 @@ th {
     align-items: center;
 }
 
+#home .title {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 5px 0;
+}
+
+#home .company {
+    font-size: 1.1em;
+    color: #3498db;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
 #home img {
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
