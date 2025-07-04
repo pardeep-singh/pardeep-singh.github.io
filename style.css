@@ -198,9 +198,10 @@ th {
 .job {
     margin-bottom: 30px;
     padding: 20px;
-    background: #f8f9fa;
+    background: #ffffff;
     border-radius: 8px;
     border-left: 4px solid #3498db;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .job header {
@@ -209,8 +210,9 @@ th {
 
 .job h3 {
     margin: 0 0 5px 0;
-    color: #2c3e50;
-    font-size: 1.4em;
+    color: #1a252f;
+    font-size: 1.5em;
+    font-weight: 700;
 }
 
 .job header p {
