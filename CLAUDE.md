@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a personal website for Pardeep Singh, a Lead Machine Learning Engineer at Fairmatic. The site is built as a static HTML website hosted on GitHub Pages and showcases professional experience, projects, and personal information.
+This is a personal website for Pardeep Singh, Engineering Lead at Srotas Health. The site is built as a static HTML website hosted on GitHub Pages and showcases professional experience, projects, and personal information.
 
 ## Architecture
 
@@ -17,25 +17,24 @@ The website follows a simple static HTML structure:
 
 ## File Structure
 
-- `index.html` - Home page with complete professional profile, experience, education, and skills
-- `projects.html` - Projects page with tables for Kaggle and GitHub projects (placeholder content)
-- `quotes.html` - Quotes page (under construction)
-- `resources.html` - Resources page (under construction)
-- `blog.html` - Blog page (under construction)
-- `style.css` - Main stylesheet with responsive design patterns
+- `index.html` - Home page: short bio, photo, "Lately" list, contact
+- `experience.html` - Work history and education (sourced from the latest CV PDF)
+- `projects.html` - Open source contributions, own GitHub projects, Kaggle notebooks/datasets
+- `quotes.html` - Favourite quotes (`figure.quote` blocks)
+- Blog page removed until there is a first post (old placeholder is in git history)
+- `style.css` - Single stylesheet: serif type, one accent colour, dated `.items` lists
 - `images/` - Directory containing profile photo and other assets
 
 ## Development Notes
 
 - This is a GitHub Pages site, so deployment is automatic when changes are pushed to the main branch
 - The site uses semantic HTML5 structure with proper accessibility considerations
-- CSS uses flexbox for layout (particularly visible in the home section)
+- Layout is modelled on nadh.in: one white sheet on a grey page, EB Garamond (Google Fonts), accent `#ff3300`; colours are CSS variables in `:root`
 - No build process or package manager is required - direct HTML/CSS/JS editing
 - All pages share the same header navigation and footer structure
 
 ## Content Management
 
-- Professional experience and skills are maintained in `index.html`
-- Project pages use table structure for organized display
-- Several pages are marked as "under construction" and need content
-- Contact information and social links are in the footer of the home page
+- Professional experience and skills are maintained in `experience.html`
+- Dated lists (experience, projects, "Lately") use `<ul class="items">` with a `.date` column and `.body`
+- Header nav and footer links are duplicated in every page; update all pages together

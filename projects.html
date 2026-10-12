@@ -3,70 +3,276 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Pardeep Singh</title>
+    <title>Projects / Pardeep Singh</title>
+    <meta name="description" content="Open source contributions, GitHub projects and Kaggle notebooks and datasets by Pardeep Singh.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="quotes.html">Quotes</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
+<div class="wrap">
+    <header class="header">
+        <a class="logo" href="index.html">Pardeep Singh</a>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="experience.html">Experience</a>
+            <a class="active" href="projects.html">Projects</a>
+            <a href="quotes.html">Quotes</a>
         </nav>
     </header>
 
     <main>
-        <section id="projects">
-            <h2>Projects</h2>
+        <div class="mast">
+            <h1>Projects</h1>
+            <p class="lead">Open source contributions, things I have built, and my work on Kaggle.</p>
+        </div>
 
-            <h3>Kaggle Projects</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Project Name</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="https://www.kaggle.com/pardeep19singh">Project 1</a></td>
-                        <td>Description of Project 1.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://www.kaggle.com/pardeep19singh">Project 2</a></td>
-                        <td>Description of Project 2.</td>
-                    </tr>
-                </tbody>
-            </table>
+        <h2>Open source contributions</h2>
+        <ul class="items">
+            <li>
+                <div class="date">Oct 2026</div>
+                <div class="body">
+                    <a class="name" href="https://github.com/Arize-ai/openinference/pulls?q=is%3Apr+author%3Apardeep-singh">Arize OpenInference</a>
+                    <span class="meta">&mdash; OpenTelemetry instrumentation for AI observability</span>
+                    <div class="desc">
+                        Merged: <a href="https://github.com/Arize-ai/openinference/pull/3974">honour <code>base64_image_max_length</code> on google-genai outputs</a>,
+                        <a href="https://github.com/Arize-ai/openinference/pull/3959">stricter oxlint rules for the JS packages</a>.
+                        In review: a Sphinx API reference with Read the Docs, and aligning GenAI dual-write with the new semantic conventions.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="date">Oct 2026</div>
+                <div class="body">
+                    <a class="name" href="https://github.com/Arize-ai/phoenix/pulls?q=is%3Apr+author%3Apardeep-singh">Arize Phoenix</a>
+                    <span class="meta">&mdash; AI observability and evaluation</span>
+                    <div class="desc">
+                        In review: <a href="https://github.com/Arize-ai/phoenix/pull/16830">a REST endpoint for project token counts and costs</a>,
+                        plus fixes to dataset splits, dashboards and the UI.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="date">Jun &ndash; Jul 2026</div>
+                <div class="body">
+                    <a class="name" href="https://github.com/maziyarpanahi/openmed/pulls?q=is%3Apr+author%3Apardeep-singh+is%3Amerged">OpenMed</a>
+                    <span class="meta">&mdash; local-first healthcare NLP and de-identification &middot; 31 merged PRs</span>
+                    <div class="desc">
+                        <ul>
+                            <li>Clinical coding: <a href="https://github.com/maziyarpanahi/openmed/pull/1135">ICD-10-CM</a>, <a href="https://github.com/maziyarpanahi/openmed/pull/1134">RxNorm</a> and <a href="https://github.com/maziyarpanahi/openmed/pull/1165">HPO</a> linkers, and a <a href="https://github.com/maziyarpanahi/openmed/pull/1137">FHIR CodeableConcept builder</a>.</li>
+                            <li>Clinical text: <a href="https://github.com/maziyarpanahi/openmed/pull/1182">negation-scope detection</a>, a <a href="https://github.com/maziyarpanahi/openmed/pull/1337">medication sig parser</a>, lab-panel and vitals structurers, severity/laterality modifiers, and cardiology, dermatology, ophthalmology and genomics NER domains.</li>
+                            <li>Privacy: <a href="https://github.com/maziyarpanahi/openmed/pull/723">k-anonymity, l-diversity and t-closeness metrics</a>, a membership-inference probe, a GDPR subject-access export, and passport MRZ detection.</li>
+                            <li>Evaluation and ingestion: inter-annotator agreement, calibration curves, a gold-corpus quality report, and Tesseract/PaddleOCR adapters.</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="date">Jun 2020</div>
+                <div class="body">
+                    <a class="name" href="https://github.com/scikit-learn/scikit-learn/pull/17492">scikit-learn</a>
+                    <div class="desc">Documentation: examples for the PrecisionRecall and ConfusionMatrix displays, and tidier API links.</div>
+                </div>
+            </li>
+            <li>
+                <div class="date">2015 &ndash; 2018</div>
+                <div class="body">
+                    <span class="name">Earlier</span>
+                    <div class="desc">
+                        Subspace support in <a href="https://github.com/vedang/clj_fdb/pull/21">clj_fdb</a>, the FoundationDB Clojure client;
+                        a <a href="https://github.com/josiahcarlson/redis-in-action/pull/49">Clojure port</a> of <em>Redis in Action</em>;
+                        scripts for the <a href="https://github.com/helpshift/helpshift-api">Helpshift API</a>;
+                        fixes to <a href="https://github.com/oauthinaction/oauth-in-action-code/pull/12"><em>OAuth 2 in Action</em></a>;
+                        and an <a href="https://github.com/BoxUpp/boxupp/pull/11">AWS provider</a> for Boxupp.
+                    </div>
+                </div>
+            </li>
+        </ul>
 
-            <h3>GitHub Projects</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Project Name</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="https://github.com/pardeep-singh">Project 1</a></td>
-                        <td>Description of Project 1.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/pardeep-singh">Project 2</a></td>
-                        <td>Description of Project 2.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <h2>On <a href="https://github.com/pardeep-singh">GitHub</a></h2>
+        <ul class="items">
+            <li>
+                <div class="date">Dec 2025</div>
+                <div class="body">
+                    <a class="name" href="https://github.com/pardeep-singh/patients_rag">patients_rag</a>
+                    <div class="desc">Patient record retrieval: semantic search over case records in ChromaDB, combined with structured filters on age, gender and more.</div>
+                </div>
+            </li>
+            <li>
+                <div class="date">May 2025</div>
+                <div class="body">
+                    <a class="name" href="https://github.com/pardeep-singh/study-group-hf-agents-course">study-group-hf-agents-course</a>
+                    <div class="desc">Notes and plan for the Hugging Face Agents course study group I ran with the IISc deep learning cohort.</div>
+                </div>
+            </li>
+            <li>
+                <div class="date">2021</div>
+                <div class="body">
+                    <a class="name" href="https://github.com/pardeep-singh/NLP-with-PyTorch">NLP-with-PyTorch</a>,
+                    <a class="name" href="https://github.com/pardeep-singh/MIT6.S191-intro-to-dl">MIT6.S191-intro-to-dl</a>
+                    <div class="desc">Working notes and lab code from books and courses.</div>
+                </div>
+            </li>
+            <li>
+                <div class="date">Apr 2020</div>
+                <div class="body">
+                    <a class="name" href="https://github.com/pardeep-singh/ml_classroom">ml_classroom</a>
+                    <div class="desc">Notebooks from the machine learning sessions I ran at Helpshift.</div>
+                </div>
+            </li>
+            <li>
+                <div class="date">Aug 2018</div>
+                <div class="body">
+                    <a class="name" href="https://github.com/pardeep-singh/parking-lot-service">parking-lot-service</a>
+                    <div class="desc">A parking lot API service in Clojure on FoundationDB.</div>
+                </div>
+            </li>
+            <li>
+                <div class="date">Jul 2018</div>
+                <div class="body">
+                    <a class="name" href="https://github.com/pardeep-singh/sqlite-clone">sqlite-clone</a>
+                    <div class="desc">A minimal SQLite clone in C.</div>
+                </div>
+            </li>
+            <li>
+                <div class="date">2018</div>
+                <div class="body">
+                    <a class="name" href="https://github.com/pardeep-singh/restro-search-engine">restro-search-engine</a>,
+                    <a class="name" href="https://github.com/pardeep-singh/eden-garden">eden-garden</a>,
+                    <a class="name" href="https://github.com/pardeep-singh/api-service-template">api-service-template</a>
+                    <div class="desc">Clojure services: restaurant search on Elasticsearch, product CRUD on a MongoDB replica set, and a REST API template.</div>
+                </div>
+            </li>
+            <li>
+                <div class="date">Jul 2017</div>
+                <div class="body">
+                    <a class="name" href="https://github.com/pardeep-singh/blogging-graphql">blogging-graphql</a>
+                    <div class="desc">A blogging app in Clojure with GraphQL.</div>
+                </div>
+            </li>
+            <li>
+                <div class="date">May 2015</div>
+                <div class="body">
+                    <a class="name" href="https://github.com/pardeep-singh/PaaS-Docker">PaaS-Docker</a>
+                    <div class="desc">A small PaaS to deploy applications on your own servers with Docker.</div>
+                </div>
+            </li>
+        </ul>
+
+        <h2>On <a href="https://www.kaggle.com/pardeep19singh">Kaggle</a></h2>
+        <p>
+            Datasets Expert (highest rank #459 of ~12,000) and Notebooks Expert (highest rank #849 of
+            ~60,000), with 39 notebooks, 12 datasets, a fine-tuned model, and 22 competitions entered
+            since 2016.
+        </p>
+
+        <h3>Notebooks</h3>
+        <ul class="items">
+            <li>
+                <div class="date">2024 &ndash; 2025</div>
+                <div class="body">
+                    <span class="name">Fine-tuning small LLMs for classification</span>
+                    <div class="desc">
+                        <a href="https://www.kaggle.com/code/pardeep19singh/fine-tune-llama3-2-1b-83-4-on-disaster-tweets">Llama 3.2 1B &mdash; 83.4% on Disaster Tweets</a> <span class="medal">bronze</span>,
+                        <a href="https://www.kaggle.com/code/pardeep19singh/fine-tune-gemma-2b-84-4-on-disaster-tweets">Gemma 2B &mdash; 84.4%</a> <span class="medal">bronze</span>,
+                        <a href="https://www.kaggle.com/code/pardeep19singh/fine-tune-gemma-2b-81-95-on-financial-sentiments">Gemma 2B on financial sentiment</a> <span class="medal">bronze</span>,
+                        and comparisons with <a href="https://www.kaggle.com/code/pardeep19singh/fine-tune-qwen3-0-6b-83-4-on-disaster-tweets">Qwen3 0.6B</a>,
+                        <a href="https://www.kaggle.com/code/pardeep19singh/fine-tune-phi-2-llm-83-78-on-disaster-tweets">Phi-2</a>,
+                        <a href="https://www.kaggle.com/code/pardeep19singh/fine-tune-open-llama-llm-82-80-on-disaster-tweets">Open LLaMA</a> and
+                        <a href="https://www.kaggle.com/code/pardeep19singh/fine-tune-all-layers-of-roberta-large-model-83">RoBERTa Large</a>.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="date">2023</div>
+                <div class="body">
+                    <span class="name">Cricket analytics</span>
+                    <div class="desc">
+                        <a href="https://www.kaggle.com/code/pardeep19singh/virat-kohli-ipl-career-analysis">Virat Kohli's IPL career</a>,
+                        <a href="https://www.kaggle.com/code/pardeep19singh/ipl-2023-analysis">IPL 2023</a> <span class="medal">bronze</span>,
+                        <a href="https://www.kaggle.com/code/pardeep19singh/wpl-2023-auction-analysis">WPL 2023 auction</a> <span class="medal">bronze</span>,
+                        <a href="https://www.kaggle.com/code/pardeep19singh/women-s-premier-league-2023-analysis">Women's Premier League 2023</a> <span class="medal">bronze</span>,
+                        and season-level analyses of The Hundred.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="date">2022 &ndash; 2023</div>
+                <div class="body">
+                    <span class="name">Tabular competitions</span>
+                    <div class="desc">
+                        <a href="https://www.kaggle.com/code/pardeep19singh/pss3e6-insightful-eda-and-outliers-handling">Paris housing: EDA and outlier handling</a> <span class="medal">silver</span>,
+                        <a href="https://www.kaggle.com/code/pardeep19singh/pss3e5-eda-and-modeling-using-original-dataset">wine quality modelling</a> <span class="medal">bronze</span>,
+                        <a href="https://www.kaggle.com/code/pardeep19singh/extensive-eda-with-actionable-insights">March Machine Learning Mania</a> <span class="medal">bronze</span>,
+                        and more from the Playground Series.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="date">2024</div>
+                <div class="body">
+                    <span class="name">PyTorch Lightning from scratch</span>
+                    <div class="desc">
+                        A four-part series on Digit Recognizer, from an
+                        <a href="https://www.kaggle.com/code/pardeep19singh/pytorch-lightning-p1-mlp-arch-0-97832">MLP</a> to a
+                        <a href="https://www.kaggle.com/code/pardeep19singh/pytorch-lightning-p4-resnet18-with-aug-0-9926">ResNet18 with augmentation (0.9926)</a>.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="date">2025</div>
+                <div class="body">
+                    <span class="name">RAG, retrieval and SFT</span>
+                    <div class="desc">
+                        <a href="https://www.kaggle.com/code/pardeep19singh/nifty50-news-rag-using-langgraph-openai-chroma">Nifty50 news RAG with LangGraph and Chroma</a>,
+                        a <a href="https://www.kaggle.com/code/pardeep19singh/patients-record-hybrid-retrieval-pipeline">hybrid retrieval pipeline for patient records</a>,
+                        and exercises from the Hugging Face SmolLM3 course on chat templates and SFT.
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <h3>Datasets</h3>
+        <ul class="items">
+            <li>
+                <div class="date">2023 &ndash; 2025</div>
+                <div class="body">
+                    <span class="name">Cricket, ball by ball</span>
+                    <div class="desc">
+                        <a href="https://www.kaggle.com/datasets/pardeep19singh/icc-mens-world-cup-2023">ICC Men's World Cup 2023</a> (6,000 downloads),
+                        <a href="https://www.kaggle.com/datasets/pardeep19singh/icc-mens-t20-world-cup-2024">ICC Men's T20 World Cup 2024</a> (4,700),
+                        <a href="https://www.kaggle.com/datasets/pardeep19singh/indian-premier-league-cricket-2023">IPL 2023</a> (3,000),
+                        and the <a href="https://www.kaggle.com/datasets/pardeep19singh/womens-premier-league-2023">Women's Premier League</a>,
+                        <a href="https://www.kaggle.com/datasets/pardeep19singh/womens-premier-leaguewpl-auction-2023">WPL auction</a>,
+                        <a href="https://www.kaggle.com/datasets/pardeep19singh/the-hundred-mens-2021-2022">The Hundred</a> and
+                        <a href="https://www.kaggle.com/datasets/pardeep19singh/icc-test-championship-2023-2025">ICC Test Championship</a>.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="date">2024 &ndash; 2025</div>
+                <div class="body">
+                    <span class="name">Text</span>
+                    <div class="desc">
+                        <a href="https://www.kaggle.com/datasets/pardeep19singh/nifty50-stocks-news">Nifty50 stock news articles</a> and
+                        <a href="https://www.kaggle.com/datasets/pardeep19singh/youtube-vidoes-subtitleshindi-english">transcripts from popular Hindi YouTube channels</a>.
+                    </div>
+                </div>
+            </li>
+        </ul>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Pardeep Singh</p>
+    <footer class="footer">
+        <ul class="flat">
+            <li><a href="https://github.com/pardeep-singh">GitHub</a></li>
+            <li><a href="https://www.kaggle.com/pardeep19singh">Kaggle</a></li>
+            <li><a href="https://www.linkedin.com/in/pardeepsingh2">LinkedIn</a></li>
+            <li><a href="https://x.com/pardeepshergill">X</a></li>
+            <li><a href="https://www.strava.com/athletes/1182305">Strava</a></li>
+        </ul>
+        <p>Pardeep Singh &copy; 2026</p>
     </footer>
+</div>
 </body>
 </html>
