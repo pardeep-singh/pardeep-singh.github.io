@@ -38,3 +38,4 @@ The website follows a simple static HTML structure:
 - Professional experience and skills are maintained in `experience.html`
 - Dated lists (experience, projects, "Lately") use `<ul class="items">` with a `.date` column and `.body`
 - Header nav and footer links are duplicated in every page; update all pages together
+- Project skills in `.claude/skills/`: `refresh-site-content` pulls new GitHub, Kaggle and Coursera work and drafts updates; `dated-items-list-content` covers dated-list conventions; `github-pages-merge-and-verify` ships a change and checks the Pages build

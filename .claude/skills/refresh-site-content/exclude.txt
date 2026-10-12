@@ -1,0 +1,8 @@
+# Items the refresh should never suggest adding. One URL (substring match) or exact
+# name per line; text after # is a comment. Add a line whenever the user turns an item down.
+
+github.com/pardeep-singh/pardeep-singh.github.io   # this site
+github.com/pardeep-singh/pardeep-singh             # GitHub profile README repo
+github.com/pardeep-singh/patients_rag              # interview assignment; keep out of "Lately"
+kaggle.com/code/pardeep19singh/patients-record-hybrid-retrieval-pipeline  # same assignment
+github.com/pardeep-singh/nodeExample               # throwaway test repo
