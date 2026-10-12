@@ -18,7 +18,7 @@ The website follows a simple static HTML structure:
 ## File Structure
 
 - `index.html` - Home page: short bio, photo, "Lately" list, contact
-- `experience.html` - Work history and education (sourced from the latest CV PDF)
+- `experience.html` - Work history, education and Coursera certificates (work history sourced from the latest CV PDF)
 - `projects.html` - Open source contributions, own GitHub projects, Kaggle notebooks/datasets
 - `quotes.html` - Favourite quotes (`figure.quote` blocks)
 - Blog page removed until there is a first post (old placeholder is in git history)
