@@ -38,4 +38,5 @@ The website follows a simple static HTML structure:
 - Professional experience and skills are maintained in `experience.html`
 - Dated lists (experience, projects, "Lately") use `<ul class="items">` with a `.date` column and `.body`
 - Header nav and footer links are duplicated in every page; update all pages together
+- pardeep-singh.com shows the site inside a frame (registrar forwarding to the Vercel copy), and GitHub, Kaggle, LinkedIn and X refuse to load in a frame. Every page carries `<base target="_top">` so outside links open in the whole window; links to the site's own pages carry `target="_self"` so they stay in the frame
 - Project skills in `.claude/skills/`: `refresh-site-content` pulls new GitHub, Kaggle and Coursera work and drafts updates; `dated-items-list-content` covers dated-list conventions; `github-pages-merge-and-verify` ships a change and checks the Pages build
