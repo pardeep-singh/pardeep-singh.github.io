@@ -35,12 +35,26 @@
             <li>
                 <div class="date">Oct 2026</div>
                 <div class="body">
-                    <a class="name" href="https://github.com/Arize-ai/openinference/pulls?q=is%3Apr+author%3Apardeep-singh">Arize OpenInference</a>
-                    <span class="meta">&mdash; OpenTelemetry instrumentation for AI observability</span>
+                    <a class="name" href="https://github.com/OrchestratorInc/agent-orchestrator/pulls?q=is%3Apr+author%3Apardeep-singh">Agent Orchestrator</a>
+                    <span class="meta">&mdash; runs fleets of coding agents from task to merged PR &middot; 2 merged PRs</span>
                     <div class="desc">
-                        Merged: <a href="https://github.com/Arize-ai/openinference/pull/3974">honour <code>base64_image_max_length</code> on google-genai outputs</a>,
+                        Merged: <a href="https://github.com/OrchestratorInc/agent-orchestrator/pull/7483">move orphaned worktree folders aside before reuse</a>,
+                        <a href="https://github.com/OrchestratorInc/agent-orchestrator/pull/7476">a clear error when sending to a session with no live controller</a>.
+                        In review: fixes to session lifecycle, tmux 3.5, Windows port fallback, and the Claude Code and Codex adapters.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="date">Oct 2026</div>
+                <div class="body">
+                    <a class="name" href="https://github.com/Arize-ai/openinference/pulls?q=is%3Apr+author%3Apardeep-singh">Arize OpenInference</a>
+                    <span class="meta">&mdash; OpenTelemetry instrumentation for AI observability &middot; 4 merged PRs</span>
+                    <div class="desc">
+                        Merged: <a href="https://github.com/Arize-ai/openinference/pull/4116">restore the current span after Agno <code>Team.run</code></a>,
+                        <a href="https://github.com/Arize-ai/openinference/pull/4087"><code>tool_span_kinds</code> for OpenAI Agents</a>,
+                        <a href="https://github.com/Arize-ai/openinference/pull/3974">honour <code>base64_image_max_length</code> on google-genai outputs</a>,
                         <a href="https://github.com/Arize-ai/openinference/pull/3959">stricter oxlint rules for the JS packages</a>.
-                        In review: a Sphinx API reference with Read the Docs, and aligning GenAI dual-write with the new semantic conventions.
+                        In review: <code>hide_reasoning</code> in TraceConfig, server address on OpenAI spans, a Sphinx API reference, and aligning GenAI dual-write with the new semantic conventions.
                     </div>
                 </div>
             </li>
@@ -50,22 +64,47 @@
                     <a class="name" href="https://github.com/Arize-ai/phoenix/pulls?q=is%3Apr+author%3Apardeep-singh">Arize Phoenix</a>
                     <span class="meta">&mdash; AI observability and evaluation</span>
                     <div class="desc">
-                        In review: <a href="https://github.com/Arize-ai/phoenix/pull/16830">a REST endpoint for project token counts and costs</a>,
-                        plus fixes to dataset splits, dashboards and the UI.
+                        In review: <a href="https://github.com/Arize-ai/phoenix/pull/16830">a REST endpoint for project token counts and costs</a>;
+                        <code>px</code> CLI commands for dataset splits, trace transfer, retention policies, annotation configs and prompt tags;
+                        secrets and dataset splits in the Python client; and fixes to dashboards and the UI.
                     </div>
                 </div>
             </li>
             <li>
-                <div class="date">Jun &ndash; Jul 2026</div>
+                <div class="date">Oct 2026</div>
+                <div class="body">
+                    <a class="name" href="https://github.com/milvus-io/milvus/pulls?q=is%3Apr+author%3Apardeep-singh">Milvus</a>
+                    <span class="meta">&mdash; cloud-native vector database &middot; 1 merged PR</span>
+                    <div class="desc">
+                        Merged: <a href="https://github.com/milvus-io/milvus/pull/54339">bounded candidate planning for NGRAM regex alternations</a>.
+                        In review: predicate factoring and range merging in the expression rewriter, exact Int64 <code>DISTINCT</code>, and group-by reduce sizing.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="date">Oct 2026</div>
+                <div class="body">
+                    <a class="name" href="https://github.com/ray-project/ray/pulls?q=is%3Apr+author%3Apardeep-singh">Ray</a>
+                    <span class="meta">&mdash; distributed compute engine for AI</span>
+                    <div class="desc">
+                        In review: cancellation and shutdown fixes in Ray Serve, job submission fixes in Ray Jobs, <code>uv run</code> argument parsing, and a more concise <code>ray list nodes</code>.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="date">Jun &ndash; Oct 2026</div>
                 <div class="body">
                     <a class="name" href="https://github.com/maziyarpanahi/openmed/pulls?q=is%3Apr+author%3Apardeep-singh+is%3Amerged">OpenMed</a>
-                    <span class="meta">&mdash; local-first healthcare NLP and de-identification &middot; 31 merged PRs</span>
+                    <span class="meta">&mdash; local-first healthcare NLP and de-identification &middot; 37 merged PRs</span>
                     <div class="desc">
                         <ul>
+                            <li>Synthetic data: <a href="https://github.com/maziyarpanahi/openmed/pull/4216">HL7 v2</a> and <a href="https://github.com/maziyarpanahi/openmed/pull/4241">C-CDA</a> generators with field-level PHI ground truth and a leakage harness.</li>
+                            <li>Multilingual de-identification: <a href="https://github.com/maziyarpanahi/openmed/pull/4145">Nepali identifiers</a>, Hausa, Yoruba, Igbo and Kinyarwanda dates, and Arabic and Amharic surrogates in their source script.</li>
                             <li>Clinical coding: <a href="https://github.com/maziyarpanahi/openmed/pull/1135">ICD-10-CM</a>, <a href="https://github.com/maziyarpanahi/openmed/pull/1134">RxNorm</a> and <a href="https://github.com/maziyarpanahi/openmed/pull/1165">HPO</a> linkers, and a <a href="https://github.com/maziyarpanahi/openmed/pull/1137">FHIR CodeableConcept builder</a>.</li>
                             <li>Clinical text: <a href="https://github.com/maziyarpanahi/openmed/pull/1182">negation-scope detection</a>, a <a href="https://github.com/maziyarpanahi/openmed/pull/1337">medication sig parser</a>, lab-panel and vitals structurers, severity/laterality modifiers, and cardiology, dermatology, ophthalmology and genomics NER domains.</li>
                             <li>Privacy: <a href="https://github.com/maziyarpanahi/openmed/pull/723">k-anonymity, l-diversity and t-closeness metrics</a>, a membership-inference probe, a GDPR subject-access export, and passport MRZ detection.</li>
                             <li>Evaluation and ingestion: inter-annotator agreement, calibration curves, a gold-corpus quality report, and Tesseract/PaddleOCR adapters.</li>
+                            <li>In review: federated LoRA fine-tuning with differential privacy and secure aggregation, and hardening of the REST service.</li>
                         </ul>
                     </div>
                 </div>
